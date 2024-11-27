@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xml:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/container_help">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/return_button"
+    android:layout_width="223dp"
+    android:layout_height="65dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:onClick="onBackButtonClicked1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.02"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.024"
+    tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/image_go_back"
+        android:layout_width="218dp"
+        android:layout_height="58dp"
+        android:background="@drawable/image_go_back"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_go_back1"
+        android:layout_width="213dp"
+        android:layout_height="54dp"
+        android:background="@drawable/image_go_back1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/image_go_back"
+        app:layout_constraintEnd_toEndOf="@+id/image_go_back"
+        app:layout_constraintStart_toStartOf="@+id/image_go_back"
+        app:layout_constraintTop_toTopOf="@+id/image_go_back" />
+
+    <TextView
+        android:id="@+id/text_go_back_title"
+        android:layout_width="154dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="回上一頁"
+        android:textColor="#FFDCF2F1"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_go_back1"
+        app:layout_constraintEnd_toEndOf="@+id/image_go_back1"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="@+id/image_go_back1"
+        app:layout_constraintTop_toTopOf="@+id/image_go_back"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <ImageView
+        android:id="@+id/container_back_icon"
+        android:layout_width="44dp"
+        android:layout_height="34dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/container_back_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/image_go_back1"
+        app:layout_constraintEnd_toEndOf="@+id/image_go_back1"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="@+id/image_go_back1"
+        app:layout_constraintTop_toTopOf="@+id/image_go_back1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_not_comfortable_container"
+        android:layout_width="392dp"
+        android:layout_height="562dp"
+        android:layout_marginEnd="56dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onButtonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/image_not_comfortable"
+            android:layout_width="371dp"
+            android:layout_height="553dp"
+            android:background="@drawable/image_not_comfortable"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.973" />
+
+        <ImageView
+            android:id="@+id/image_not_comfortable1"
+            android:layout_width="378dp"
+            android:layout_height="550dp"
+            android:background="@drawable/image_not_comfortable1"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text_not_comfortable_title"
+            android:layout_width="123dp"
+            android:layout_height="340dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineHeight="96px"
+            android:text="我\n不\n舒\n服"
+            android:textColor="#FF0F1035"
+            android:textSize="96px"
+            app:layout_constraintBottom_toBottomOf="@+id/image_not_comfortable1"
+            app:layout_constraintEnd_toEndOf="@+id/image_not_comfortable1"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="@+id/image_not_comfortable1"
+            app:layout_constraintTop_toTopOf="@+id/image_not_comfortable1"
+            app:layout_constraintVertical_bias="0.78" />
+
+        <ImageView
+            android:id="@+id/image_not_comfortable_vector"
+            android:layout_width="132dp"
+            android:layout_height="122dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_not_comfortable_vector"
+            app:layout_constraintBottom_toTopOf="@+id/text_not_comfortable_title"
+            app:layout_constraintEnd_toEndOf="@+id/image_not_comfortable1"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="@+id/image_not_comfortable1"
+            app:layout_constraintTop_toTopOf="@+id/image_not_comfortable1"
+            app:layout_constraintVertical_bias="0.226" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_course_recommould"
+        android:layout_width="392dp"
+        android:layout_height="562dp"
+        android:layout_marginStart="96dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onCourseRecomButtonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_course_recommend"
+            android:layout_width="371dp"
+            android:layout_height="553dp"
+            android:background="@drawable/image_course_recommend"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/image_course_recommend1"
+            android:layout_width="378dp"
+            android:layout_height="550dp"
+            android:background="@drawable/image_course_recommend1"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text_course_recommend_title"
+            android:layout_width="123dp"
+            android:layout_height="340dp"
+            android:gravity="center_horizontal|top"
+            android:includeFontPadding="false"
+            android:lineHeight="96px"
+            android:text="課\n程\n推\n薦"
+            android:textColor="#FF0F1035"
+            android:textSize="96px"
+            app:layout_constraintBottom_toBottomOf="@+id/image_course_recommend1"
+            app:layout_constraintEnd_toEndOf="@+id/image_course_recommend1"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="@+id/image_course_recommend1"
+            app:layout_constraintTop_toTopOf="@+id/image_course_recommend1"
+            app:layout_constraintVertical_bias="0.776" />
+
+        <ImageView
+            android:id="@+id/image_course_recommend_face_fun"
+            android:layout_width="132dp"
+            android:layout_height="122dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_course_recommend_face_fun"
+            app:layout_constraintBottom_toTopOf="@+id/text_course_recommend_title"
+            app:layout_constraintEnd_toEndOf="@+id/image_course_recommend1"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_course_recommend1"
+            app:layout_constraintVertical_bias="0.483" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

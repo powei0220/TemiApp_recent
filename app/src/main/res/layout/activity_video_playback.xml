@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 影片視圖 -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 返回主頁面按鈕，放置在左上角 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/return_button"
+        android:layout_width="223dp"
+        android:layout_height="65dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onBackButtonClicked1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024">
+
+        <ImageView
+            android:id="@+id/image_go_back"
+            android:layout_width="218dp"
+            android:layout_height="58dp"
+            android:background="@drawable/image_go_back"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_go_back1"
+            android:layout_width="213dp"
+            android:layout_height="54dp"
+            android:background="@drawable/image_go_back1"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/image_go_back"
+            app:layout_constraintEnd_toEndOf="@+id/image_go_back"
+            app:layout_constraintStart_toStartOf="@+id/image_go_back"
+            app:layout_constraintTop_toTopOf="@+id/image_go_back" />
+
+        <TextView
+            android:id="@+id/text_go_back_title"
+            android:layout_width="154dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="回上一頁"
+            android:textColor="#FFDCF2F1"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_go_back1"
+            app:layout_constraintEnd_toEndOf="@+id/image_go_back1"
+            app:layout_constraintHorizontal_bias="0.83"
+            app:layout_constraintStart_toStartOf="@+id/image_go_back1"
+            app:layout_constraintTop_toTopOf="@+id/image_go_back"
+            app:layout_constraintVertical_bias="0.142" />
+
+        <ImageView
+            android:id="@+id/container_back_icon"
+            android:layout_width="44dp"
+            android:layout_height="34dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/container_back_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/image_go_back1"
+            app:layout_constraintEnd_toEndOf="@+id/image_go_back1"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="@+id/image_go_back1"
+            app:layout_constraintTop_toTopOf="@+id/image_go_back1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>  <!-- 設定邊距，使按鈕與邊緣有距離 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

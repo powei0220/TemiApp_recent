@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "494256088007",
+    "firebase_url": "https://temi-immediate-default-rtdb.firebaseio.com",
+    "project_id": "temi-immediate",
+    "storage_bucket": "temi-immediate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494256088007:android:5820d0c577d82e929fafe2",
+        "android_client_info": {
+          "package_name": "com.example.temiapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgKYIP_ilnsMquELATYbbXM9VWMOmDuO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

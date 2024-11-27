@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/map_container">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/service_desk_container"
+      android:layout_width="319dp"
+      android:layout_height="193dp"
+      android:clickable="true"
+      android:focusable="true"
+      android:onClick="onToDeskButtonClicked"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.104"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.2">
+
+    <ImageView
+        android:id="@+id/service_desk_image1"
+        android:layout_width="820.4px"
+        android:layout_height="470.49px"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/service_desk_image1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/service_desk_image2"
+        android:layout_width="820.4px"
+        android:layout_height="470.49px"
+        android:background="@drawable/service_desk_image2"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/service_desk_text"
+        android:layout_width="162.12dp"
+        android:layout_height="87.91dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lineHeight="51.64dp"
+        android:text="服務台"
+        android:textColor="#FF0F1035"
+        android:textSize="42.67dp"
+        app:layout_constraintBottom_toBottomOf="@+id/service_desk_image2"
+        app:layout_constraintEnd_toEndOf="@+id/service_desk_image2"
+        app:layout_constraintStart_toStartOf="@+id/service_desk_image2"
+        app:layout_constraintTop_toTopOf="@+id/service_desk_image2" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/health_center_container"
+      android:layout_width="320dp"
+      android:layout_height="189dp"
+      android:clickable="true"
+      android:focusable="true"
+      android:onClick="onToDeskButtonClicked"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.922"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.206">
+
+    <ImageView
+        android:id="@+id/health_center_image1"
+        android:layout_width="820.4px"
+        android:layout_height="470.49px"
+        android:background="@drawable/health_center_image1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/health_center_image2"
+        android:layout_width="820.4px"
+        android:layout_height="470.49px"
+        android:background="@drawable/health_center_image2"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/health_center_text"
+        android:layout_width="233dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="健康中心"
+        android:textColor="#FF0F1035"
+        android:textSize="42.67dp"
+        app:layout_constraintBottom_toBottomOf="@+id/health_center_image2"
+        app:layout_constraintEnd_toEndOf="@+id/health_center_image2"
+        app:layout_constraintStart_toStartOf="@+id/health_center_image2"
+        app:layout_constraintTop_toTopOf="@+id/health_center_image2"
+        app:layout_constraintVertical_bias="0.506" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/restroom_container"
+      android:layout_width="319dp"
+      android:layout_height="186dp"
+      android:clickable="true"
+      android:focusable="true"
+      android:onClick="onToDeskButtonClicked"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.104"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.94">
+
+    <ImageView
+        android:id="@+id/restroom_image1"
+        android:layout_width="820.4px"
+        android:layout_height="470.49px"
+        android:background="@drawable/restroom_image1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/restroom_image2"
+        android:layout_width="820.4px"
+        android:layout_height="470.49px"
+        android:background="@drawable/restroom_image2"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/restroom_text"
+        android:layout_width="162.12dp"
+        android:layout_height="87.91dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lineHeight="51.64dp"
+        android:text="廁所"
+        android:textColor="#FF0F1035"
+        android:textSize="42.67dp"
+        app:layout_constraintBottom_toBottomOf="@+id/restroom_image2"
+        app:layout_constraintEnd_toEndOf="@+id/restroom_image2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/restroom_image2" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/classroom_container"
+      android:layout_width="318dp"
+      android:layout_height="185dp"
+      android:clickable="true"
+      android:focusable="true"
+      android:onClick="onToDeskButtonClicked"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.922"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.941">
+
+    <ImageView
+        android:id="@+id/classroom_image1"
+        android:layout_width="820.4px"
+        android:layout_height="470.49px"
+        android:background="@drawable/classroom_image1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/classroom_image2"
+        android:layout_width="820.4px"
+        android:layout_height="470.49px"
+        android:background="@drawable/classroom_image2"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/classroom_text"
+        android:layout_width="162.12dp"
+        android:layout_height="87.91dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lineHeight="51.64dp"
+        android:text="教室"
+        android:textColor="#FF0F1035"
+        android:textSize="42.67dp"
+        app:layout_constraintBottom_toBottomOf="@+id/classroom_image2"
+        app:layout_constraintEnd_toEndOf="@+id/classroom_image2"
+        app:layout_constraintStart_toStartOf="@+id/classroom_image2"
+        app:layout_constraintTop_toTopOf="@+id/classroom_image2" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/container_go_back_bottom"
+      android:layout_width="455px"
+      android:layout_height="125px"
+      android:background="?attr/selectableItemBackground"
+      android:clickable="true"
+      android:focusable="true"
+      android:onClick="onBackButtonClicked"
+      tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/image_go_back"
+        android:layout_width="455px"
+        android:layout_height="113px"
+        android:background="@drawable/image_go_back"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image_go_back1"
+        android:layout_width="436px"
+        android:layout_height="99px"
+        android:background="@drawable/image_go_back1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/image_go_back"
+        app:layout_constraintTop_toTopOf="@+id/image_go_back"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <TextView
+        android:id="@+id/text_go_back_title"
+        android:layout_width="198dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="回上一頁"
+        android:textColor="#FFDCF2F1"
+        android:textSize="64px"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp" />
+    <ImageView
+        android:id="@+id/container_back_icon"
+        android:layout_width="96px"
+        android:layout_height="77px"
+        android:scaleType="centerInside"
+        android:src="@drawable/container_back_icon"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="9dp" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

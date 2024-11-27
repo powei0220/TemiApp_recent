@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/container_home_page"
+    tools:context=".MainActivity">
+
+    <!-- Talk Button Container -->
+
+    <!-- Patrol Button Container -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonStartCapture"
+        android:layout_width="700dp"
+        android:layout_height="723dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onNavigateButtonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonStartPatrol"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintStart_toEndOf="@+id/talk_button_container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.33">
+
+        <ImageView
+            android:id="@+id/container_funny_ghost_solid1"
+            android:layout_width="485dp"
+            android:layout_height="515dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/container_funny_ghost_solid1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.468" />
+
+        <TextView
+            android:id="@+id/text_future_guard"
+            android:layout_width="426dp"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:lineHeight="50sp"
+            android:text="未來守護"
+            android:textColor="#FF0F1035"
+            android:textSize="64sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Navigation Button -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/talk_button_container"
+        android:layout_width="392dp"
+        android:layout_height="562dp"
+        android:layout_marginStart="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onLostButtonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.33">
+
+        <ImageView
+            android:id="@+id/image_rectangle_talk"
+            android:layout_width="371dp"
+            android:layout_height="553dp"
+            android:background="@drawable/image_rectangle_lost"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <ImageView
+            android:id="@+id/image_rectangle_talk1"
+            android:layout_width="378dp"
+            android:layout_height="550dp"
+            android:background="@drawable/image_rectangle_talk1"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text_talk_content"
+            android:layout_width="167dp"
+            android:layout_height="435dp"
+            android:gravity="center"
+            android:lineHeight="64sp"
+            android:text="我\n需\n要\n幫\n助"
+            android:textColor="#FF0F1035"
+            android:textSize="64sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_rectangle_talk1"
+            app:layout_constraintEnd_toEndOf="@+id/image_rectangle_talk1"
+            app:layout_constraintStart_toStartOf="@+id/image_rectangle_talk1"
+            app:layout_constraintTop_toTopOf="@+id/image_rectangle_talk1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonStartPatrol"
+        android:layout_width="392dp"
+        android:layout_height="562dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onPatrolButtonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493"
+        app:layout_constraintWidth_percent="0.33">
+
+        <ImageView
+            android:id="@+id/image_rectangle_lost"
+            android:layout_width="371dp"
+            android:layout_height="553dp"
+            android:background="@drawable/image_rectangle_lost"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.984" />
+
+        <ImageView
+            android:id="@+id/image_rectangle_lost1"
+            android:layout_width="378dp"
+            android:layout_height="550dp"
+            android:background="@drawable/image_rectangle_talk1"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text_lost_content"
+            android:layout_width="90dp"
+            android:layout_height="383dp"
+            android:gravity="center"
+            android:text="巡\n邏\n任\n務"
+            android:textColor="#FF0F1035"
+            android:textSize="64sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_rectangle_lost1"
+            app:layout_constraintEnd_toEndOf="@+id/image_rectangle_lost1"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="@+id/image_rectangle_lost1"
+            app:layout_constraintTop_toTopOf="@+id/image_rectangle_lost1"
+            app:layout_constraintVertical_bias="0.538" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
